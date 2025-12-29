@@ -1,0 +1,110 @@
+
+*{
+    font-family: poppins system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    box-shadow:  0.1px 0.1px 15px rgb(46, 45, 45);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 100px auto 10px;
+    width: 540px;
+    height: auto;
+    background-color: white;
+    
+}
+.title{
+    display: flex;
+    justify-content:left;
+    margin-left: 20px;
+    color: black;
+}
+
+#text{
+    border: none;
+    outline: none;
+    padding: 10px;
+    height: 30px;
+    font-size: 16px;
+    background-color: rgba(200, 196, 196, 0.512);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+#text::placeholder{
+    color: black;
+}
+
+.insert{
+    display: flex; 
+    position: relative;
+    height: 60px; 
+    margin-bottom: 0px;
+}
+.insert #text{
+    padding-left: 25px;
+    width: 430px;
+}
+button{
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    height: 50px;
+    width: 80px;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+    cursor: pointer;
+    border-top-right-radius:  15px;   
+    border-bottom-right-radius: 15px; 
+}
+button:hover{
+    background-color: rgb(43, 43, 43);
+
+}
+ul li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    
+}
+ul li.check{
+    color: rgb(78, 76, 76);
+    text-decoration:line-through ;
+}
+ul li::before{
+    position: absolute;
+    left: 0px;
+    content: ' ';
+    height: 25px;
+    width: 25px;
+    background-image: url(./Resources/circle-regular.svg);
+    background-position: center;
+    object-fit: cover;
+}
+ul li.check::before{
+    position: absolute;
+    left: 0px;
+    content: ' ';
+    height: 25px;
+    width: 25px;
+    background-image: url(./Resources/circle-dot-regular.svg);
+    background-position: center;
+    object-fit: cover;
+}
+span{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 26px;
+   
+}
+span:hover{
+    color: red;
+}
